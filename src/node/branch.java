@@ -6,7 +6,7 @@ public class branch extends node {
     
     private final ArrayList<node> subNodes = new ArrayList<>();
 
-    public String getText(){
+    public String getText(){ //getter do txt
         return null;
     }
 
@@ -21,7 +21,7 @@ public class branch extends node {
         subNodes.remove(filho);
     }
 
-    public int getClasse(){
+    public int getClasse(){ //getter da classe
         int classe = 0;
 
         for (node subNo : subNodes){
@@ -31,12 +31,12 @@ public class branch extends node {
         return classe;
     }
 
-    public int getAltura(){
+    public int getAltura(){ //getter da altura
 
         int alturaBase = this.getNivel();
         int maxAltura = alturaBase;
 
-        for(node node : subNodes){
+        for(node node : subNodes){ 
 
             if(node.getNivel() > maxAltura){
                 maxAltura = node.getNivel();
@@ -46,7 +46,7 @@ public class branch extends node {
         return(maxAltura - alturaBase);
     }
 
-    @Override
+    @Override 
     public ArrayList<node> getSubNos() {
         return this.subNodes;
     }

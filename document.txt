@@ -1,3 +1,7 @@
-Texto exemplo para criação de documento
+Texto do nó: Texto. Nível do nó: 1. Altura do nó: 0. 
+Texto do nó: de exemplo. Nível do nó: 2. Altura do nó: 0. 
+Texto do nó: para. Nível do nó: 2. Altura do nó: 0. 
+Texto do nó: criação Nível do nó: 3. Altura do nó: 0. 
+Texto do nó: de documento. Nível do nó: 3. Altura do nó: 0. 
 
 Log: 2022-08-1220:51:16.984777300

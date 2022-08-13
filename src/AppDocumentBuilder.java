@@ -36,18 +36,18 @@ public class AppDocumentBuilder {
         var.txtBuilder();
     }
 
-    public void consoleBuilder(){
+    public void consoleBuilder(){ //metodo de exibição atraves do console 
 
         transversalMetodo.builder(this.base);
         System.out.println(transversalMetodo.getText());
     }
 
-    public void txtBuilder(){
+    public void txtBuilder(){ //metodo de txt dentro do documento 
 
         transversalMetodo.builder(this.base);
         FileWriter saida = null;
 
-        try{
+        try{ //mecanismo de monitoramento
             FileOutputStream apagarConteudoDocumento = new FileOutputStream(this.getOutputFileName());
 
             saida = new FileWriter(this.getOutputFileName(), true);
@@ -55,7 +55,7 @@ public class AppDocumentBuilder {
             saida.write("\nLog: " + java.time.LocalDate.now() + "" + java.time.LocalTime.now());
             saida.close();
 
-        }catch (IOException e){
+        }catch (IOException e){  //tratativa de exceções 
             e.printStackTrace();
         }
     }

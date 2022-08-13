@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public abstract class node {
     
-    //private int profundidade;
-    //private int Altura;
-    //private int classe;
+    private int profundidade;
+    private int Altura;
+    private int classe;
     private int nivel;
     public Object getAltura;
 
